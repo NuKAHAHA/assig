@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(50deg, #009FFF, #ec2F4B);
+    color: #9d9bab;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    filter: drop-shadow(3px 3px 5px #be0606);
+}
+
+.navbar {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.header a {
+    color: #3e0165;
+}
+
+.navbar a:hover {
+    color: #164f1b;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-position: center;
+}
+
+.home-content {
+    max-height: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #4c3b77;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3e0165;
+}
+
+.home-content p {
+    font-size: 20px;
+    margin: 10px 0 10px;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0c0c1c;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #3e0165;
+    text-decoration: none;
+}
+
+.home-sci a:hover {
+    background: #3e0165;
+    color: #353335;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: #18181d;
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #9d9bab;
+}
+
+.about-img {
+    position: relative;
+    width: 29rem;
+    height: 26rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    animation: ava-animate 4s infinite alternate;
+}
+
+.about-img img {
+    width: 60%;
+    border-radius: 50%;
+}
+
+@keyframes ava-animate {
+    0% {
+        border-radius: 51% 49% 18% 82% / 54% 43% 57% 46%;
+    }
+    40% {
+        border-radius: 46% 54% 39% 61% / 48% 45% 55% 52%;
+    }
+    60% {
+        border-radius: 36% 64% 41% 59% / 66% 50% 50% 34%;
+    }
+    100% {
+        border-radius: 68% 32% 27% 73% / 24% 69% 31% 76%;
+    }
+}
+
+
+.about-content {
+    text-align: center;
+}
+
+span {
+    color: cyan;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    background: #0c0c1c;
+    padding-bottom: 5rem;
+}
+
+
+.education-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+
+
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid #ffffff;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.education-content .content .year {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-bottom: .5rem;
+}
+
+.education-content .content .year i {
+    padding-right: .4rem;
+}
+
+.education-content .content h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.education-content .content p {
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: linear-gradient(50deg, #009FFF, #ec2F4B);
+}
+
+.skills_h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: gold;
+}
+.skills-row .skills-column {
+    flex: 1 1 40rem;
+}
+.skills-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.skills-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.skills-box .skills-content {
+    position: relative;
+    border: .2rem solid #000000;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+.skills-content .progress {
+    padding: 1rem 0;
+}
+.skills-content .progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-content .progress h3 span {
+    color: #009FFF;
+}
+
+.skills-content .progress .bar {
+    height: 3rem;
+    border-radius: 2.6rem;
+    border: .3rem solid #033358;
+    padding: .5rem;
+    margin: 1.5rem 0;
+}
+.skills-content .progress .bar span {
+    display: block;
+    height: 100%;
+    border-radius: 2.6rem;
+    background: gold;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 80%;
+}
+
+
